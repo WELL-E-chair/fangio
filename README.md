@@ -4,13 +4,13 @@
 Analysis toolkit to generate enriched video data with movement index curves measured on user-selected regions of the video (e.g. cow head). 
 Can be used with any type of scenario (tie or free stall, indoors or outdoors) to support behavioral analysis workflows.
 
----
+
 
 ## Requirements
 
 * MATLAB
 
----
+
 ## Instructions
 
 Before running the code, set the following variables to appropriate values in `fangio_v2.m`:
@@ -27,7 +27,7 @@ Save and run the script.
 
 ### Step 1: Trace the regions where movement indices should be computed
 
-<img width="1200" height="550" alt="" src="https://github.com/bioinfoUQAM/fangio/blob/main/images/fangio1.png?raw=true" />
+<img width="1200" height="550" alt="" src="https://github.com/WELL-E-chair/fangio/blob/main/images/fangio1.png?raw=true" />
 
 
 This is done using the mouse. Place the cross over the desired location and press the left-button of the mouse to place a point there. Click on the first point to close the region.
@@ -52,7 +52,7 @@ Processed 3000 frames of 27001. Processing time remaining about 9mins and 12secs
 
 ### Step 3: Crop the video to remove unnecessary information
 
-<img width="1200" height="550" alt="" src="https://github.com/bioinfoUQAM/fangio/blob/main/images/fangio2.png?raw=true" />
+<img width="1200" height="550" alt="" src="https://github.com/WELL-E-chair/fangio/blob/main/images/fangio2.png?raw=true" />
 
 Draw a rectangular box with the mouse to delimit which part of the image the user wants to feature in the augmented video.  This speeds up the generation of the augmented video and makes the corresponding file smaller. It also leaves less room to display the movement indices curves.
 Once the crop region was entered, the window closes itself and Step 4 starts.
@@ -60,7 +60,7 @@ Once the crop region was entered, the window closes itself and Step 4 starts.
 
 ### Step 4: Select the frame region where movement curves will be displayed
 
-<img width="550" height="600" alt="" src="https://github.com/bioinfoUQAM/fangio/blob/main/images/fangio3.png?raw=true" />
+<img width="550" height="600" alt="" src="https://github.com/WELL-E-chair/fangio/blob/main/images/fangio3.png?raw=true" />
 
 Using the mouse, select a rectangular region where movement indices are displayed. Once done, the script closes the window and starts Step 5.
 
@@ -70,7 +70,7 @@ Using the mouse, select a rectangular region where movement indices are displaye
 This is just to allow the user to see how things will look like in the augmented video before starting the somewhat lengthy process of augmented video generation. 
 The script displays the first frame of the augmented video and asks for user input:
 
-<img width="600" height="650" alt="" src="https://github.com/bioinfoUQAM/fangio/blob/main/images/fangio4.png?raw=true" />
+<img width="600" height="650" alt="" src="https://github.com/WELL-E-chair/fangio/blob/main/images/fangio4.png?raw=true" />
 
 The script displays the first frame of the video exactly like it will be in the augmented video, and asks the user if they are happy with the format and presentation. 
 If the user presses `No` the script will stop and the user can start over from scratch.
